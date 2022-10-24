@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <!-- SEO -->
+    <title>Home | Vite Starter</title>
+    <meta name='description' content='Starter using Vite'>
+    <link rel='canonical' href='https://vite-starter.tca.cool/'>
+    <meta name='robots' content='noindex, nofollow'>
+
+    <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png'>
+    <link rel='manifest' href='/site.webmanifest'>
+    <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5'>
+    <meta name='msapplication-TileColor' content='#603cba'>
+    <meta name='theme-color' content='#ffffff'>
+
+    <!-- Social Tags -->
+    <meta property='og:title' content='Home | Vite Starter'>
+    <meta property='og:type' content='website'>
+    <meta property='og:url' content='https://vite-starter.tca.cool/'>
+    <meta property='og:image' content='https://www.vite-starter.tca.cool/logo.png'>
+    <meta property='og:description' content='Starter using Vite'>
+    <meta name='twitter:card' content='summary'>
+    <meta name='twitter:site' content='@jonahlmadeya'>
+    <meta name='twitter:creator' content='@jonahlmadeya'>
+
+    <!-- Ressource loading -->
+    <link rel='preconnect' href='https://fonts.googleapis.com' crossorigin>
+    <link rel='preconnect' href='https://cdn.jsdelivr.net' crossorigin>
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com'>
+    <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+
+    <!-- Styles -->
+    <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'>
+    <link href='/css/theme.css' rel='stylesheet' type='text/css'>
+
+    <!-- Analytics -->
+    <!-- <script src='https://www.googletagmanager.com/gtag/js?id=G-##########' async></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-##########');
+    </script>
+    <script src='https://connect.facebook.net/signals/config/##########?v=2.9.57&amp;r=stable' async></script>
+    <script src='https://connect.facebook.net/en_US/fbevents.js' async></script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '###############');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=###############&ev=PageView&noscript=1'></noscript> -->
+
+    <!-- Critical CSS -->
+    <style type='text/css'>
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Th.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Th.woff') format('woff');
+            font-weight: 100;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-ThIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-ThIt.woff') format('woff');
+            font-weight: 100;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-UltLt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-UltLt.woff') format('woff');
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-UltLtIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-UltLtIt.woff') format('woff');
+            font-weight: 200;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Lt.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-LtIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-LtIt.woff') format('woff');
+            font-weight: 300;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Roman.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-It.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-It.woff') format('woff');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Md.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-MdIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-MdIt.woff') format('woff');
+            font-weight: 500;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-BdIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-BdIt.woff') format('woff');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Bd.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Hv.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Hv.woff') format('woff');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-HvIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-HvIt.woff') format('woff');
+            font-weight: 800;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-Blk.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-Blk.woff') format('woff');
+            font-weight: 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Helvetica Neue LT Std';
+            src: url('/assets/fonts/HelveticaNeueLTStd-BlkIt.woff2') format('woff2'),
+                url('/assets/fonts/HelveticaNeueLTStd-BlkIt.woff') format('woff');
+            font-weight: 900;
+            font-style: italic;
+            font-display: swap;
+        }
+
+        :root {
+            --font-body-family: 'Helvetica Neue LT Std', sans-serif;
+            --font-heading-family: 'Helvetica Neue LT Std', sans-serif;
+            --font-body-style: normal;
+            --font-body-weight: 400;
+            --font-body-weight-bold: 700;
+            --font-heading-style: normal;
+            --font-heading-weight: 700;
+            --font-body-scale: 1;
+            --font-heading-scale: 1;
+            --color-base-text: #000000;
+            --color-base-background-1: #ffffff;
+            --page-width: 1400px;
+            --page-width-margin: 6.125rem;
+            --animate-duration: 1s;
+            --animate-delay: 1s;
+            --animate-repeat: 1;
+        }
+
+        *,  
+        *::before,
+        *::after {
+              box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: calc(var(--font-body-scale) * 62.5%);
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 1.4rem; /* 14px */
+            line-height: calc(1 + 0.8 / var(--font-body-scale));
+            font-family: var(--font-body-family);
+            font-style: var(--font-body-style);
+            font-weight: var(--font-body-weight);
+        }
+
+        @media screen and (min-width: 750px) {
+            body {
+                font-size: 1.4rem; /* 14px */
+            }
+        }
+
+    </style>
+
+</head>
+
+<body class='index-page'>
+    
+    <header class='main-header'>
+        <nav>
+            <ul>
+                <li><a href='/'>Index</a></li>
+                <li><a href='/about/'>About</a></li>
+            </ul>
+        </nav>
+        <h1>Index</h1>
+    </header>
+
+    <div id='MainContent'>
+        
+
+
+    </div>
+
+    <!--  Script  -->
+    <script>
+
+
+    </script>
+
+</body>
+</html>
